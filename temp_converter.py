@@ -1,18 +1,8 @@
-# 1 degrees Celsius to Fahrenheit	F = ( 9 5 × 1 ) + 32
-print("welcome to temperture converter")
-
-custemer = input("Enter your unit f or c:_")
-if custemer == "f":
-    temp = int(input("enter the number:_"))
-    c =33.8 + temp
-    print(c,"°c")
-
-        
+# 1 degrees Celsius to Fahrenheit	F = ( 9.5 × c ) + 32
+def temp_converter(custemer, temp ):
+        if custemer == "f":
+            return ((temp * 1.8) + 32)
     
-else: custemer == "c"
-
-tempc = int(input("enter number:_"))
-f =9.5 + tempc
-print(f,"°f")
-
+        elif custemer == "c":
+            return [(temp - 32)*5/9]
 

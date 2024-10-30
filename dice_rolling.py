@@ -1,19 +1,17 @@
 import random
-while True:
-    print("Welcome to dice game")
-    number = random.randint(1 , 14)
-    gamer = int(input("Enter the number your betting on:_"))
-   
+def dice_game(gamer):
+
+    number = random.randint(1,14)
+    
+
     if gamer == number:
-        print("You won the bet")
-        break
+        return ("You won the bet")
+        
 
     elif gamer != number:
-       print("U lost the bet")           
-       break
+        return ("U lost the bet")           
+ 
 
-    gamer = input("Do you want to continue:_")    
-    if gamer == "no":
-        quit()  
+    
     elif gamer == "yes":
-        continue 
+        return
